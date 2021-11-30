@@ -1,7 +1,6 @@
 import React , {useState, useEffect, useRef } from 'react'
 import Heading from "../components/Heading"
 import Loader from "../components/Loader"
-import {useLocation} from 'react-router-dom'
 import Images from "../components/Images"
 import { useGlobalContext } from "../contexts/ImagesContext.js"
 import InfiniteScroll from 'react-infinite-scroll-component';
@@ -17,7 +16,6 @@ function Explore() {
     const searchURL='https://api.unsplash.com/search/photos'
     const mount= useRef(false);
     const [newImages, setNewImages] = useState(false);
-    /*let location = useLocation();*/
     let {images, setImages,query} = useGlobalContext();
 
     /*let [page, setPage] = useState(1);*/

@@ -13,7 +13,6 @@ function App() {
        <Router>
         <ScrollTop/>
         <NavBar/>
-        {/*<GenNavbar/>*/}
         <Switch>
 
         <Route exact path="/"  component= {Home} />
