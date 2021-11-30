@@ -2,12 +2,6 @@ import React from 'react'
 import './ImageComp.css'
 import { useGlobalContext } from "../contexts/ImagesContext.js"
 
-//https://youtu.be/uFuOPlOk0sQ?t=1915
-//https://github.com/candraKriswinarto/React-infinite-scroll/blob/master/src/App.js
-//https://colorlib.com/wp/photo-gallery-website-templates/
-//https://react-projects-19-stock-photos.netlify.app/
-//https://react-projects.netlify.app/
-//https://github.com/john-smilga/react-projects-19-stock-photos/blob/main/src/App.js
 function ImageComp({data, onClick}) {
     /*console.log(data)*/
     let {language} = useGlobalContext();

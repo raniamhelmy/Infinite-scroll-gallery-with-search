@@ -1,5 +1,4 @@
 .navbar-container{
-    /*border:1px solid red;*/
     height: 60px;
     z-index: 999;
     position: sticky;
@@ -15,8 +14,6 @@
     
 }
 .navbar-wrap {
-    /*padding:3px  10px 20px;*/
-    /*border:1px solid green;*/
     padding: 5px 0;
     display: flex;
     align-items: center;
@@ -25,7 +22,7 @@
 .navbar-center, .navbar-left,.navbar-right{
     flex: 1;
     align-items: center;
-    /*border:1px solid pink;*/
+    
 }
 
 .navbar-left{
@@ -34,7 +31,7 @@
     margin-left: 5px;
 }
 .language{
-    /*font-size: 14px;*/
+    
     cursor: pointer;
     font-family: 'Urbanist', sans-serif;
     margin-left: 5px;
@@ -75,7 +72,6 @@
 .logo{
     font-family: 'Anton', sans-serif;
     font-weight: 400;
-    /*font-size: 35px;*/
     font-size: clamp(1.8rem, 2.5vw, 4rem);
     cursor: pointer;
     text-align: center;
@@ -83,7 +79,6 @@
 }
 .navbar-right{
     display: flex;
-    /*border:1px solid red;*/
     justify-content: flex-end;
     margin-right: 5px;
 }
@@ -91,7 +86,7 @@
     display: block;
     float: right;
     margin-right: 5px;
-    /*border:1px solid red;*/
+    
 }
 
 .submit-button{
@@ -112,7 +107,7 @@
     }
     .navbar-left{
         align-items: flex-start;
-        /*border: 1px solid teal;*/
+        
     }
  
 }

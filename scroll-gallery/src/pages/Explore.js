@@ -7,13 +7,14 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import axios from 'axios'
 import './Explore.css'
 
+/*******Put your access key in the .env file and call it here ********/
 const accessKey = process.env.REACT_APP_ACCESS_KEY;
 
 
 
 function Explore() {
     const rootURL='https://api.unsplash.com';
-    const searchURL='https://api.unsplash.com/search/photos'
+    /*const searchURL='https://api.unsplash.com/search/photos'*/
     const mount= useRef(false);
     const [newImages, setNewImages] = useState(false);
     let {images, setImages,query} = useGlobalContext();
@@ -23,52 +24,52 @@ function Explore() {
   
 
     const fetchImages = async(per_page = 30) => {
-      //random?
+    
       let url;
-      /*if (query) {
-        url = `${rootURL}/search/photos?client_id=${accessKey}&query=${query}&per_page=20`;
-      } else {
-        url = `${rootURL}/photos?client_id=${accessKey}&count=${count}`;
-      }*/
+      
       
         try{
           if (query) {
             setNewImages(true);
-            /*window.location.reload();*/
+            
             
             url = `${rootURL}/search/photos?client_id=${accessKey}&query=${query}&per_page=${per_page}`;
-            //url = `${rootURL}/search/photos?client_id=${accessKey}&query=${query}&page=${page}`;
-          
-            /*setPage(page+1);
-            console.log(url,page)*/
+
+            /*******If the page set to be used *******/
+            /*url = `${rootURL}/search/photos?client_id=${accessKey}&query=${query}&page=${page}`;
+            setPage(page+1);
+            console.log(url,page)
+            /****************************************/
+
             /*console.log(url)*/
             const res = await axios.get(url);
-            
-            /*console.log('siu',images);
-            console.log('here is the res',res.data.results);*/
             setImages([...images, ...res.data.results]);
             
            
 
           } else {
-            /////random?
-            /*${rootURL}/photos/random?client_id=${accessKey}&count=5*/
+            /*******If you want to use /random? to avoid set page/ returns 5 images per/load *******/
+            /* url =${rootURL}/photos/random?client_id=${accessKey}&count=5*/
+            /**************************************************************************************/
+
             url = `${rootURL}/photos?client_id=${accessKey}&per_page=${per_page}`;
+
+            /*******If the page set to be used *******/
             /*url = `${rootURL}/photos?client_id=${accessKey}&page=${page}&per_page=${per_page}`;
             page=page+1;
-            setPage(page);
-            console.log(url,page)*/
+            setPage(page);*/
+            /****************************************/
+
+
             /*console.log(url)*/
-            const res = await axios.get(url)
-            /*console.log('here is the res',res.data);*/
+            const res = await axios.get(url);
             if(mount.current === true){images=[]; setImages(images); mount.current = false; window.scrollTo(0, 0);/*setPage(1);*/}
             setImages([...images, ...res.data]);
             setNewImages(false);
             
             /*console.log(images)*/
           }
-            /*const res = await axios.get(`${rootURL}/photos?client_id=${accessKey}&count=${count}`)
-            setNewImages(false);*/
+            
         }catch(e){
             console.log('Error happened:',e);
             setNewImages(false);
@@ -91,13 +92,7 @@ function Explore() {
           images=[]; setImages(images);
           /*console.log(mount.current, mount)*/
         }
-        /*if (!mount.current) {
-          mount.current = true;
-          console.log(mount.current)
-          return;
-        }
-        if (newImages) return;*/
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+        
       }, [newImages,query]);
 
 
@@ -106,7 +101,6 @@ function Explore() {
     return (
         <div className='explore-container'>
             <Heading/>
-            {/*<Loader />*/}
             <InfiniteScroll
              dataLength={images.length}
              next={fetchImages}

@@ -1,5 +1,4 @@
 .heading-container{
-    /*margin-bottom: 20px;*/
     padding:0;
 
     background: linear-gradient(to right, rgba(214, 211, 211, 0.7), rgba(255, 255, 255, 0.1)),
@@ -17,7 +16,6 @@
 .heading-title{
     font-family: 'Anton', sans-serif;
     font-weight: 400;
-    /*font-size: 35px;*/
     font-size: clamp(1.8rem, 3.4vw, 4rem);
     text-transform: uppercase;
 }

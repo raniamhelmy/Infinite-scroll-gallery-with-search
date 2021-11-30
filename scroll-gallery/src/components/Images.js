@@ -1,15 +1,15 @@
 import React , {useState} from 'react'
 import ImageComp from './ImageComp'
 import { useGlobalContext } from "../contexts/ImagesContext.js"
-//import LightBox from "../components/LightBox"
+
 import './Images.css'
 function Images() {
+
     let {images} = useGlobalContext();
     const [imageToDisplay, setImageToDisplay] = useState("");
     const [lightBox, setLightBox] = useState(false);
     /*console.log(images)*/
 
-    /*console.log(images)*/
     const DisplayImage = (image) => {
         /*console.log(image)*/
         setImageToDisplay(image);
@@ -64,14 +64,7 @@ function Images() {
        : null
       }
          
-            {/*<ImageComp/>
-            <ImageComp/>
-            <ImageComp/>
-            <ImageComp/>
-            <ImageComp/>
-            <ImageComp/>
-            <ImageComp/>
-        <ImageComp/>*/}
+          
         </div>
     )
 }

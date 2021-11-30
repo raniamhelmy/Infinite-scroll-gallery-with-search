@@ -1,25 +1,18 @@
 .images-container{
-    /*border:1px solid black;*/
     max-width: 1250px;
     margin:50px  auto;
-    /*border:1px solid red;*/
     width:80%;
     max-width: 70rem;
     display: grid;
     grid-gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /*grid-auto-rows: 240px;*/
 }
 
 .lightbox-img {
-    /*height: 80vh;
-    max-width: 90vw;
-    object-fit: cover;*/
     max-width:100%;
     width:400px;
     height: 400px;
-    /*max-height:70% ;*/
-    /*border:1px solid red;*/
+   
    
     /*this is the only way to make image responsive inside the flexbox*/
     margin:auto;
