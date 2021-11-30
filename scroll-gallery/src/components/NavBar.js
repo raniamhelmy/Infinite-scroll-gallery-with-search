@@ -7,13 +7,13 @@ function NavBar() {
     let location = useLocation();
     const direct = location.pathname;
     /*console.log(direct)*/
-    console.log(query);
+    /*console.log(query);*/
 
     const handleSubmit =(e)=>{
         e.preventDefault();
         if (!query) return;
         else{
-          console.log('query found');
+          /*console.log('query found');*/
           
         }
       
