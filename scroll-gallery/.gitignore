@@ -10,7 +10,7 @@
 /coverage
 
 # production
-/public/_redirects
+public/_redirects
 /build
 
 # misc
