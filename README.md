@@ -5,7 +5,7 @@ This is a simple website to handle Scrolling Images Infinitely while the user is
 >Note that this API is handling a limited requests/hour so due to this limitation, some assumtions/conditions was added in order to not exceed the limit.
 
 ## Website link 
-[Stacykingblog.io](https://raniamhelmy.github.io/stacyskingblog/)
+[ScrollGallery.io](https://raniamhelmy.github.io/stacyskingblog/)
 
 ## ScreenShot
 
