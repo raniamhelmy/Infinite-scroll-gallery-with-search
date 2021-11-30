@@ -1,0 +1,128 @@
+.navbar-container{
+    /*border:1px solid red;*/
+    height: 60px;
+    z-index: 999;
+    position: sticky;
+    top: 0; /* required */
+    width: 100%;
+    background-color: rgb(143, 199, 223);
+    color:#fff;
+}
+
+.logo-link{
+    color:#fff;
+    text-decoration: none;
+    
+}
+.navbar-wrap {
+    /*padding:3px  10px 20px;*/
+    /*border:1px solid green;*/
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    /*justify-content: space-around;*/
+}
+.navbar-center, .navbar-left,.navbar-right{
+    flex: 1;
+    align-items: center;
+    /*border:1px solid pink;*/
+}
+
+.navbar-left{
+    display: flex;
+    /*border:1px solid pink;*/
+    margin-left: 5px;
+}
+.language{
+    /*font-size: 14px;*/
+    cursor: pointer;
+    font-family: 'Urbanist', sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: clamp(0.9rem, 1.2vw, 1.5rem);
+}
+.language:hover{
+    text-decoration: underline;
+}
+/*.active {
+    color: #f44336;
+  }*/
+.search-container{
+    border: 0.5px solid rgba(254,233,230,0.9);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+}
+.search-container >i{
+    color:#333;
+}
+.input{
+    border: none;
+    color: #000;
+}
+
+.input::placeholder{
+    font-family: 'Urbanist', sans-serif;
+    color:#777;
+}
+.input:focus{
+    outline: none;
+}
+
+.logo{
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    /*font-size: 35px;*/
+    font-size: clamp(1.8rem, 2.5vw, 4rem);
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+}
+.navbar-right{
+    display: flex;
+    /*border:1px solid red;*/
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+.navbar-home-right{
+    display: block;
+    float: right;
+    margin-right: 5px;
+    /*border:1px solid red;*/
+}
+
+.submit-button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+@media screen and (max-width: 650px) {
+    .search-container{
+        padding: 3px 2px;
+        justify-content: space-between;
+    }
+    .input{
+        width:60%;
+    }
+    .navbar-right{
+        justify-content: flex-start;
+    }
+    .navbar-left{
+        align-items: flex-start;
+        /*border: 1px solid teal;*/
+    }
+ 
+}
+
+.navbar-home-container{
+    height: 60px;
+    z-index: 999;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.1);
+    color:#fff;
+    display: flex;
+    align-items: center;
+}

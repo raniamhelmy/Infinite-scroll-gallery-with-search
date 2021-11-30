@@ -1,0 +1,68 @@
+.home-container{
+    margin-top:-60px ;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("https://cdn.futura-sciences.com/buildsv6/images/wide1920/6/6/d/66da29be61_99905_google-images-rechercher.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.home-container-wrap{
+    margin-top:14rem;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*border:1px solid red;*/
+}
+.home-container-title{
+    font-family: 'Urbanist', sans-serif;
+    font-size: clamp(2.6rem, 3.8vw, 4rem);
+    width: 70%;
+    margin: auto;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+.home-span{
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 3.5vw, 4rem);
+    text-transform: uppercase;
+}
+.home-button{
+    padding:10px 25px;
+    margin:25px auto;
+    border-radius: 10px;
+    background-color: rgb(143, 199, 223);
+    color:#fff;
+    border:1px solid rgb(143, 199, 223);
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    font-size: clamp(1.2rem, 1.75vw, 2rem);
+    cursor: pointer;
+
+}
+.home-button:hover{
+    background-color: #fff;
+    border:1px solid #fff;
+    color: #000;
+}
+.footer{
+ color:#fff;
+}
+.footer-desc{
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+}
+@media screen and (max-width: 480px) {
+    .home-container-wrap{
+        margin-top:10rem;
+    }
+
+}
