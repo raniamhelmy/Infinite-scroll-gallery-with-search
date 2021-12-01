@@ -5,7 +5,7 @@ This is a simple website to handle Scrolling Images Infinitely while the user is
 >Note that this API is handling a limited requests/hour so due to this limitation, some assumtions/conditions was added in order to not exceed the limit.
 
 ## Website link 
-[Flare.io](https://raniamhelmy.github.io/stacyskingblog/)
+[Flare.io](https://flare-gallery.netlify.app/)
 
 ## ScreenShot
 
