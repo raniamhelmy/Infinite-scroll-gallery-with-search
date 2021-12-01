@@ -37,7 +37,8 @@ function Explore() {
 
             /*******If the page set to be used *******/
             /*url = `${rootURL}/search/photos?client_id=${accessKey}&query=${query}&page=${page}`;
-            setPage(page+1);
+            page=page+1;
+            setPage(page);
             console.log(url,page)
             /****************************************/
 
@@ -90,7 +91,9 @@ function Explore() {
         if (!mount.current && newImages !== false && query !== '') {
           mount.current = true
           images=[]; setImages(images);
-          /*console.log(mount.current, mount)*/
+          /* page=page+1;
+            setPage(page);
+          console.log(mount.current, mount)*/
         }
         
       }, [newImages,query]);
